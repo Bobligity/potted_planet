@@ -31,13 +31,18 @@ jobs:
       #     unityVersion: 2019.2.11f1
 
       # Build
-      - name: Build project
+      - name: Build WebGL
         uses: webbertakken/unity-builder@v0.10
         with:
           unityVersion: 2019.2.11f1
-          targetPlatform:
-            - WebGL
-            - StandaloneWindows
+          targetPlatform: WebGL
+
+      # Build
+      - name: Build StandaloneWindows
+        uses: webbertakken/unity-builder@v0.10
+        with:
+          unityVersion: 2019.2.11f1
+          targetPlatform: StandaloneWindows
 
       # Output
       - uses: actions/upload-artifact@v1
