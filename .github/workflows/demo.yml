@@ -30,12 +30,12 @@ jobs:
       #   with:
       #     unityVersion: 2019.2.11f1
 
-      # Build
-      - name: Build WebGL
-        uses: webbertakken/unity-builder@v0.10
-        with:
-          unityVersion: 2019.2.11f1
-          targetPlatform: WebGL
+      # # Build
+      # - name: Build WebGL
+      #   uses: webbertakken/unity-builder@v0.10
+      #   with:
+      #     unityVersion: 2019.2.11f1
+      #     targetPlatform: WebGL
 
       # Build
       - name: Build StandaloneWindows
